@@ -129,8 +129,7 @@ def time_stats(df):
 
     # display the most common month
     months = ['January', 'February', 'March', 'April', 'May', 'June']
-    popular_month = df['month'].mode()[0]
-    print('Most Popular Month:', months[popular_month - 1])
+    print('Most Popular Month:', months[df['month'].mode()[0] - 1])
 
     # display the most common day of week
     days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
@@ -199,11 +198,9 @@ def user_stats(df,city):
         gender_types = df['Gender'].value_counts()
         print("Counts of Each Gender:\n{}\n".format(gender_types))
         min_birth = df['Birth Year'].min()
-        print("Earliest Year of Birth:", int(min_birth))
-        print()
+        print("Earliest Year of Birth: {}\n".format(int(min_birth)))
         max_birth = df['Birth Year'].max()
-        print("Most Recent Year of Birth:", int(max_birth))
-        print()
+        print("Most Recent Year of Birth: {}\n".format(int(max_birth)))
         popular_birth = df['Birth Year'].mode()[0]
         print("Most Common Year of Birth:", int(popular_birth))
 
