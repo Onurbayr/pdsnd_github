@@ -15,4 +15,6 @@ It asks user's preferences and gets them as input, then it outputs statistical i
 * washington.csv (data file)
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Inspired and consulted links:
+* This [link](https://www.geeksforgeeks.org/python-pandas-dataframe-mode "Title") is used for Pandas Dataframe Mode usage.
+* This [link](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.dt.weekday.html "Title") is used for Pandas Series Datetime of Weekday usage.
